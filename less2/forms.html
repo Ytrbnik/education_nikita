@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lesson  form</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+    <meta name="description" content="1 Lesson by html for my">
+    <link rel="shortcun icon" href="./images/favicon.png" type="image/png">
+</head>
+<body>
+<form action="" method="get" enctype="multipart/form-data">
+<fieldset>
+    <legend>Учетные данные</legend>
+    <p>
+      <label>Ваше Имя:</label>
+      <input type="text" name="name">
+    </p>
+    <p>
+      <label>Пароль:</label>
+      <input type="password" name="password">
+    </p>
+</fieldset>
+<fieldset>
+    <legend>Дополнительные данные</legend>
+    <p>
+        <label>Заблокированое поле:</label>
+        <input type="text" name="block" disabled>
+      </p>
+      <p>
+        <label>Только для чтения:</label>
+        <input type="text" name="read" value="меня не изменить" readonly>
+      </p>
+    <p>
+      <label>Загрузите файл:</label>
+      <input type="file" name="file" multiple>
+    </p>
+    <p>
+      <label>Выбирете страну:</label>
+      <input type="text" name="country" list="country_name">
+            <datalist id="country_name">
+                <option>Украина</option>
+                <option>Польша</option>
+                <option>Венгрия</option>
+                <option>Руминия</option>
+            </datalist>
+    </p>
+    <p>
+      <label>Укажите чисто людей:</label>
+      <input type="number" name="number" min="1" max="24">
+    </p>
+    <p>
+        <label>Укажите диапазон:</label>
+        <input type="range" name="range" min="0" max="100" step="10">
+      </p>
+     <p>
+        <label>Укажите дату:</label>
+        <input type="date" name="date">
+    </p>
+    <p>
+        <label>Выбирете цвет:</label>
+        <input type="color" name="color">
+    </p>
+    <p>
+        <label>Скритое поле:</label>
+        <input type="hidden" name="user_id">
+    </p>
+    <p>
+        <label>Коментарий:</label>
+        <textarea name="comment"></textarea>
+    </p>
+    <p>
+    <select name="products" size="3">
+    <optgroup label="фрукты">
+        <option>Яблоки</option>
+        <option>Бананы</option>
+        <option>Апельсины</option>
+        <option>Мандарины</option>
+    </optgroup>
+    <optgroup label="оствльное">
+        <option>Капуста</option>
+        <option>Крупа</option>
+        <option selected>Картошка</option>
+    </optgroup>
+    </select>
+    </p>
+    <p>
+        <label>Выбирете один или несколько вариантов</label>
+        <p>
+            <label for="check1">Ватиант 1</label>
+            <input type="checkbox" name="check1" id="check1" value="1" checked>
+        </p>
+        <p>
+            <label for="check2">Ватиант 2</label>
+            <input type="checkbox" name="check2" id="check2" value="2">
+        </p>
+        <p>
+            <label for="check3">Ватиант 3</label>
+            <input type="checkbox" name="check3" id="check3" value="3">
+        </p>
+    </p>
+    <p>
+        <label>Выбирете свой язык</label>
+        <p>
+            <label for="lang1">Укрианский</label>
+            <input type="radio" name="lang" id="lang1" value="Укр">
+        </p>
+        <p>
+            <label for="lang2">Польски</label>
+            <input type="radio" name="lang" id="lang2" value="Пл">
+        </p>
+        <p>
+            <label for="lang3">Чешски</label>
+            <input type="radio" name="lang" id="lang3" value="Чеш">
+        </p>
+    </p>
+</fieldset>
+    <p>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сбросить">
+    </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lesson1 html страиница</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+    <meta name="description" content="1 Lesson by html for my">
+    <link rel="shortcun icon" href="./images/favicon.png" type="image/png">
+</head>
+<body>
+    <form action="" method="get" enctype="multipart/form-data">
+    <fieldset>
+        <legend><b>Личные данные</b></legend>
+        <p>
+            <label>Имя</label>
+            <input type="text" name="name">
+        </p>
+        <p>
+            <label>Email</label>
+            <input type="email" name="email">
+        </p>
+        <p>
+            <label>Пароль</label>
+            <input type="password" name="password">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend><b>Адресс и способ доставки</b></legend>
+        <p>
+            <label>Адрресс доставки</label>
+            <input type="text" name="adress" list="delivery">
+                <datalist id="delivery">
+                    <option>Киев</option>
+                    <option>Днепр</option>
+                    <option>Харьков</option>
+                    <option>Кривой Рог</option>
+                    <option>Запорожье</option>
+                </datalist>
+        </p>
+        <label><b>Способ доставки</b></label>
+        <p>
+            <label for="ukr_post">Укр.почта</label>
+            <input type="radio" name="del" id="ukr_post" value="укрпочта">
+        </p>
+        <p>
+            <label for="novo_post">Новая почта</label>
+            <input type="radio" name="del" id="novo_post" value="Нова Пошта">
+        </p>
+    </fieldset>
+    <fieldset>
+    <legend><b>Выбирете способ оплаты</b></legend>
+    <p>
+       <label for="cash">Наличные</label>
+       <input type="radio" name="money" id="cash" value="нал">
+    </p>
+    <p>
+        <label for="card">Карта</label>
+        <input type="radio" name="money" id="card" value="карта">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend><b>Подтверждение</b></legend>
+    <p>
+        <label for="check1">Позвонить за час до прибытия</label>
+        <input type="checkbox" name="check1" id="check1" value="1" checked>
+    </p>
+    <p>
+        <label for="check2">Отправить трекер товара на почту</label>
+        <input type="checkbox" name="check2" id="check2" value="2">
+    </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Подтвердить заказ">
+        <input type="reset" value="Отменить">
+    </p>
+    </form>
+</body>
+</html>
