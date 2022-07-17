@@ -1,0 +1,14 @@
+div.lorem {
+color: blue;
+text-align: center;
+text-indent: 40px;
+}
+ol.dreams li {
+list-style-type:upper-roman;
+}
+ul.food li {
+    list-style-type: none;
+    list-style-image: url(../../less1/images/done.png);
+    font-size: 45px;
+    text-transform: capitalize;
+}

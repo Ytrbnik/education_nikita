@@ -1,0 +1,55 @@
+.block-1 {
+    height: 400px;
+    border: 1px solid;
+    display: flex;
+    /*flex-direction: row-reverse;*//*направление*/
+    /*flex-wrap: wrap;*//*перенос*/
+    /*flex-flow: row wrap;*//*обьеденет предведущие*/
+    justify-content: space-between;/*выравнивание по основной оси*/
+    align-items: center;/*выравнивание по вертикали*/
+}
+.block-1 div {
+    border: 1px solid;
+    flex-basis: 20%;/*размер контейнера*/
+    flex-grow: 1;/*блок больше не увеличивает ширину*/
+    flex-shrink: 1;/*не уменяшаеться ширина*/
+}
+/*.block-1 div:last-child {
+    align-self: flex-start;/*работает как align-items только для конкретного блока*/
+.block-1 .b1  {
+    order: 3;
+}
+.block-1 .b2  {
+    order: 1;
+}
+.block-1 .b3  {
+    order: 4;
+}
+.block-1 .b4  {
+    order: 2;
+}
+/*DOMASHKA*/
+.block-2 {
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.block-2 div {
+    border: 1px solid;
+    flex-basis: 30%;
+    display: flex;
+}
+.c1 {
+    align-self: flex-start;
+    order: 2;
+}
+.c2 {
+    align-self: center;
+    order: 1;
+}
+.c3 {
+    align-self: flex-end;
+    order: 3;
+}

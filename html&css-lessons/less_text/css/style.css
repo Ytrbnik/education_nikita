@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    /* font-style: italic; *//*вкючает италик*/
+    font-weight: 400;/*толщина букв*/
+    line-height: 20px;/*интерильяж*/
+    text-align: left;/*выравнивание*/
+    /*text-decoration: underline;*//*нижнее подчеркивание*/
+    /*text-decoration: line-through;*//*линия насквозь*/
+    text-decoration: overline;/*подчеркивание снизу*/
+    text-indent: 20px;/*отступ*/
+    text-shadow: 3px 3px 3px rgba (0, 0, 0, 0.5);
+    /*text-transform: capitalize;*//*каждое слово с заглавной*/
+    /*text-transform: uppercase;*//*все заглавные*/
+    text-transform: lowercase;
+    color: #000;
+    /*color: rgba(red, green, blue, alpha);*//*указание цвета с альфа-каналом*/
+}
+ul.list_1 li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    /*list-style-type: none;*/ /*отключает маркеры*/
+    /*list-style-type: disc;*/ /*стандартный маркер (можно не писать)*//*так же есть круг и квадрать писать на английском*/
+    /*list-style-type: decimal;*/ /*делает список нумерованым, то что можно сделать через <ol> в html*/
+    /*list-style-type: upper-roman;*/ /*римские цифры(это большие). Маленькие делаются заменяя upper на lower*/
+    /*list-style-type: lower-alpha;*/ /*нумерация алфавитом изменять на большие так же как и с римскими*/
+    /*list-style-type: lower-greek;*/ /*нумерация греческим алфавитом. есть только в нижнем колонтитуле*/
+    list-style-type: disc;
+    color: red;
+    /*list-style-image: url(../../less1/images/done.png);*//*картинка вместо маркера*/
+}
+ul.list_1 li span {
+    color: #000;
+}
+ul.menu li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 100x;
+    list-style-type: none;
+}
+ul.menu li a {
+    text-decoration: none;
+    color: #000;
+}

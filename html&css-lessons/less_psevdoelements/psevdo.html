@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пссевдоэлементы</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+    <meta name="description" content="Lesson psevdo for my">
+    <link rel="shortcun icon" href="../less1/images/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <h2>Псевдоклассы</h2>
+    <h3>:focus</h3>
+    <form class="form-1">
+        <input type="text">
+    </form>
+    <h3>:checked</h3>
+    <form class="form-2">
+       <div>
+            <input type="checkbox">
+            <label>Первый пункт</label>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label>Воторой пункт</label>
+        </div>
+    </form>
+    <h3>:link</h3>
+    <a href="reply.html">Непосещенная</a>
+    <h3>:visited</h3>
+    <a href="http://google.com" target="_blank">Посещенная</a>
+    <h3>:active</h3>
+    <div class="active"></div>
+    <h3>:disabeled/:enabeled</h3>
+    <form class="form-3">
+    <input type="text" disabled>
+    <input type="text">
+    <input type="text">
+    </form>
+    <h3>:not</h3>
+    <div class="block-1">
+    <p class="title">Первый абзац</p>
+    <p>Второй абзац</p>
+    <p class="title">Третий абзац</p>
+    </div>
+    <form class="form-4">
+        <input type="text">
+        <input type="text">
+        <input type="password">
+        <input type="submit">
+    </form>
+    <h2>Псевдоклассы отношений</h2>
+    <h3>:first-child/ :last-child/ :nth-child/ :nth-of-type</h3>
+    <div class="block-2">
+        <p>Первый</p>
+        <p>Второй</p>
+        <p>Третий</p>
+        <span>text</span>
+        <span>text</span>
+        <div></div>
+        <p>Четвертый</p>
+        <p>Пятный</p>
+        <p>Шестой</p>
+        <p>Седьмой</p>
+        <p>Восьмой</p>
+        <p>Девятый</p>
+        <p>Десятый</p>
+    </div>
+    <h2>Пссевдоэлементы</h2>
+    <h3>:first-letter</h3>
+    <div class="block-3">
+        <p>Первый текстовый абзац</p>
+    </div>
+    <h3>:first-line</h3>
+    <div class="block-4">
+        <p>Первый текстовый абзац Первый текстовый абзац Первый текстовый абзац Первый текстовый абзац Первый текстовый абзац</p>
+    </div>
+    <h3>:before/ :after</h3>
+    <div class="block-5">
+        <p>Первый текстовый абзац</p>
+    </div>
+    <!--ДОМАШКА-->
+    <ul>
+        <li class="point">1</li>
+        <li class="point">2</li>
+        <li class="point">3</li>
+        <li >4</li>
+        <li class="point">5</li>
+    </ul>
+    <div class="block-radio-1">
+        <input type="radio" name="rad1">
+        <label>Первый пункт</label>
+        <input type="radio" name="rad1">
+        <label>Второй пункт</label>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-size: 30px;
+}
+div {
+    color: blue;
+}
+span {
+    color: green;
+}
+#list_1 {
+    color: aqua;
+}
+#list_2 {
+    color: red;
+}
+#list_3 {
+    color: orange;
+}
+.list_1 {
+    font-weight: bold;
+}
+input[type="text"] {
+    color: orange;
+}
+div p {
+    color: rgba(241, 0, 209, 0.544);
+}
+div p span {
+    color: yellow;
+}
+.div_1 p {
+    color: blueviolet;
+}
+.div_1 p span {
+    color: blueviolet;
+}
+.block > p {
+    color: greenyellow;
+}
+.comb_1 p + span {
+    color: orange;
+}
+.comb_2 p ~ span {
+    color:lime;
+}

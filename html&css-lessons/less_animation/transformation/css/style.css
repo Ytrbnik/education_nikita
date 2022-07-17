@@ -1,0 +1,179 @@
+.block-1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /*transition-duration: 300ms;*/
+    /*transition-property: background;*/
+    /*transition-timing-function: ease-in;/*steps(10)*/
+    transition: 300ms ease-in;
+}
+.block-1:hover {
+    background: blue;
+    width: 300px;
+}
+.block-2 {
+    width: 100px;
+    height: 100px;
+    border: 4px solid;
+    /*animation-name: color;*/
+    /*animation-duration: 2000ms;*/
+    /*animation-iteration-count: infinite;*/
+    animation: color 2000ms infinite;
+}
+@keyframes color {
+    0% {
+        border-color: red;
+        background: blue;
+        border-radius: 100%;
+    }
+    20% {
+        border-color: blue;
+        background: red;
+        border-radius: 80%;
+    }
+    40% {
+        border-color: orange;
+        background: green;
+        border-radius: 60%;
+    }
+    60% {
+        border-color: aqua;
+        background: violet;
+        border-radius: 40%;
+    }
+    80% {
+        border-color: violet;
+        background: aqua;
+        border-radius: 20%;
+    }
+    100% {
+        border-color: blue;
+        background: #000;
+        border-radius: 20%}
+}
+.block-3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: radial-gradient(at top left, aqua, blue);
+    position: absolute;
+    animation: jump 300ms infinite alternate;
+}
+@keyframes jump {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100px;
+    }
+}
+/*ТРАНСФОРМАЦИЯ*/
+.mg{
+    margin: 60px auto;
+}
+.block-4 {
+    background: red;
+    width: 150px;
+    height: 150px;
+}
+.block-4-t {
+    background: blue;
+    width: 150px;
+    height: 150px;
+    transition: 300ms ease-in;
+    /*transform-origin: 0px 75px;*//*Позиция якроя обьекта (поумолчани в центре)*/
+}
+.block-4-t:hover {
+    transform:rotate(45deg);
+}
+.block-5-t {
+    background: green;
+    width: 150px;
+    height: 150px;
+    transition: 300ms ease-in;
+}
+.block-5-t:hover {
+    transform: translate(150px,100px);
+}
+.block-6-t {
+    background: rgb(255, 106, 0);
+    width: 150px;
+    height: 150px;
+    transform: scale(1, 1.5);
+}
+.block-7-t {
+    background: rgb(255, 0, 208);
+    width: 150px;
+    height: 150px;
+    transform: skew(15deg, 25deg);
+}
+/*ДОМАШКА*/
+.block-dz {
+    width: 150px;
+    height: 150px;
+    background: orange;
+    transition: all 300ms ease;
+    transform: rotate(0deg);
+}
+.block-dz:hover {
+    animation: move 300ms infinite linear;
+}
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.block-dz-2 {
+    width: 150px;
+    height: 150px;
+    background: rgb(30, 255, 0);
+    transition: 300ms ease-in;
+}
+.block-dz-2:hover {
+    background: rgb(0, 234, 255);
+    width: 600px;
+}
+.block-dz-3 {
+    width: 150px;
+    height: 150px;
+    background: rgb(0, 234, 255);
+    transition: 300ms ease-in;
+    transform-origin: left bottom;
+}
+.block-dz-3:hover {
+    transform: scale(2,2);
+}
+.block-dz-4 {
+    width: 150px;
+    height: 150px;
+    background:blue;
+    animation: dz 7s infinite;
+}
+@keyframes dz {
+    0% {
+        border-radius: 100%;
+    }
+    30% {
+        background: green;
+        border-radius: 20px 0 20px 0;
+    }
+    60% {
+        background: orange;
+        border: 3px solid;
+        border-radius: 0;
+    }
+    90% {
+        height: 100px;
+    }
+    100% {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    }
+}

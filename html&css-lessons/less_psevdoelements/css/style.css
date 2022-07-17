@@ -1,0 +1,112 @@
+.form-1 input {
+    outline: none;
+    width: 100px;
+    transition: 1s;
+}
+.form-1 input:focus {
+    width: 250px;
+    border: red 2px solid;
+}
+.form-2 input:checked +label {
+    color: green;
+}
+a:link {
+    color: rgb(17, 255, 0);
+}
+a:visited {
+    color: red;
+}
+.active {
+    width: 150px;
+    height: 150px;
+    background: blue;
+    transition: 300ms;
+}
+.active:active {
+    width: 300px;
+    height: 300px;
+    background: red;
+}
+.form-3 input:disabled {
+    border: 2px solid rgb(255, 0, 0);
+}
+.form-3 input:enabled {
+    border: 2px solid olive;
+}
+.block-1 p:not(.title) {
+    color: red;
+}
+.form-4 input:not([type="password"]) {
+    border: 2px solid blue;
+}
+/*.block-2 p:first-child {
+    color: red;
+}*/
+/*.block-2 p:last-child {
+    color: red;
+}*/
+/*.block-2 p:nth-child(5) {
+    color: red;
+}*/
+/*.block-2 p:nth-child(2n) {
+    color: red;
+}*/
+/*.block-2 p:nth-child(n+6) {
+    color: red;
+}*/
+/*.block-2 p:nth-child(-n+6) {
+    color: red;
+}*/
+/*.block-2 p:nth-child(n+3):nth-child(-n+7) {
+    color: red;
+}*/
+.block-2 p:nth-of-type(4) {
+    color: red;
+}
+.block-3 p::first-letter {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.block-4 p {
+    width: 200px;
+}
+.block-4 p:first-line {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.block-5 p::before {
+    content: "Элемент before/";
+    display: inline-block;
+    width: 110px;
+    height: 10px;
+    background: orange;
+    border-radius: 3px;
+    padding: 3px;
+    line-height: 10px;
+}
+.block-5 p::after {
+    content: "/Элемент after/";
+}
+/*ДОМАШКА*/
+li {
+    list-style-type: none;
+    color: red;
+    padding: 5px;
+}
+li::before {
+    content: "\2642";
+}
+li:hover {
+    color: green;
+}
+li:active {
+    color: aqua;
+    width: 100px;
+    height: 100px;
+    transform: 300ms;
+}
+.block-radio-1 input[type="radio"]:checked {
+    color: green;
+}

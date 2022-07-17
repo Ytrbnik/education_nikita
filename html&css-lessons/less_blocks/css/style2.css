@@ -1,0 +1,65 @@
+.block {
+    border: 1px solid;
+    width: 400px;
+    height: 100px;
+}
+/*позиционируеться отностительно блоков в верстке*/
+.block_1 {
+    border: 1px solid;
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 64px;
+    top: 24px;
+}
+/*позиционируется отностительно экрана*/
+.block_2 {
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 24px;
+    top: 64px;
+}
+/*позиционируется так же как и абсолют но не скролиться*/
+.block_3 {
+    border: 1px solid blue;
+    width: 400px;
+    height: 100px;
+    position: fixed;
+    left: 32px;
+    top: 128px;
+    z-index: 1;/*номер позиции по оси Z (в порядке где 1 это нижний слой а 10 верхний)*/
+}
+/*позиционирование отностительно блока происходить путем указани в радительском блоке position: relative;*/
+.block_4 {
+    border: 5px solid;
+    width: 400px;
+    height: 100px;
+    position: relative;
+}
+.block_4 div {
+    border: 1px solid;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+}
+/*позиционирование с применением float*/
+.block_5 {
+    border: 2px solid;
+    overflow: hidden;/*позволяет блокам с оптиканиемписываться в родительский блок*/
+}
+.block_5 p {
+    border: 1px solid;
+    float: left; /*оптикание с лева на право*/
+}
+.cub {
+    width: 50px;
+    height: 20px;
+    background: red;
+}
+.clear {
+    clear: both;/*свойство отменяющее обтикание*/
+}

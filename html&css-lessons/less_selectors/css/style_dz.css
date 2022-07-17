@@ -1,0 +1,27 @@
+#dz_1 {
+    color: red;
+    font-weight: bold;
+}
+/*поднастройка через ':' и указание под класса*/
+div:not(.dz_2) > p {
+    color: green;
+}
+.dz_2 p {
+    font-size: 18px;
+    font-style: italic;
+}
+.one {
+    color: red;
+}
+.two {
+    color: blue;
+}
+input[type="password"] {
+    font-size: 20px;
+}
+input[type="submit"] {
+    color: green;
+}
+input[type="reset"] {
+    color: red;
+}

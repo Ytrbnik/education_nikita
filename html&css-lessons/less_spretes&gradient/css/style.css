@@ -1,0 +1,65 @@
+.sprite {
+    background: url(../../less1/images/sm_5b3f866b943e2.jpg) no-repeat;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+.icon-1 {
+    background-position: -62px -106px;
+}
+.icon-2 {
+    background-position: -162px -106px;
+}
+.icon-3 {
+    background-position: -255px -106px;
+}
+.icon-4 {
+    background-position: -62px -193px;
+}
+/*ГРАДИЕНТЫ*/
+.grad-1 {
+    background: linear-gradient(75deg, red, red 125px, blue 125px, green );/*to right top,так тоже можно*/
+    border: 0 solid;
+    width: 400px;
+    height: 400px;
+}
+.grad-2 {
+    background: radial-gradient(at top, blue, aqua);/*at top right*/
+    border: 0 solid;
+    width: 400px;
+    height: 400px;
+}
+.grad-3 {
+    background: radial-gradient(circle at 65% 15%, transparent, aqua, blue);
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+.grad-4 {
+    background: repeating-radial-gradient(circle, aqua, transparent 60px);
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+/*домашка*/
+.grad-5 {
+    background: linear-gradient(to right top, blue, aqua 30%);
+    width: 300px;
+    height: 300px;
+}
+.grad-6 {
+    background: linear-gradient(to right bottom, rgb(255, 255, 0), rgb(255, 255, 0) 20%, blue 20%, blue 70%, red 70%);
+    width: 300px;
+    height: 300px;
+}
+.grad-7 {
+    background: radial-gradient( rgb(255, 255, 0), red );
+    width: 300px;
+    height: 300px;
+}
+.grad-8 {
+    background:  radial-gradient(at left top, rgb(255, 255, 0), red );
+    width: 300px;
+    height: 300px;
+}

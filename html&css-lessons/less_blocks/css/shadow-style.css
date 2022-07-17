@@ -1,0 +1,34 @@
+.block-1 {
+    background: red;
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+}
+.block-2 {
+    background: url(../../less1/images/Bg.jpg);/*no-repeat blue*/
+    /*background-size: contain; cover;*/
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+}
+.block-3 {
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+}
+.block-4 {
+    width: 250px;
+    height: 250px;
+    background: url(../../less1/images/favicon2.png);
+}
+.block-5 {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    background: url(../../less1/images/favicon2.png) no-repeat blue;
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5), inset -3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+/*.in-shadow-1 {
+    box-shadow: inset -3px 3px 4px rgba(0, 0, 0, 0.5);
+}*/

@@ -1,0 +1,31 @@
+p {
+    border: 1px solid red; /*сплошная обводка*/
+    /*border: 1px dotted green;*/ /*обводка точками*/
+    /*border: 1px dashed blue;*/ /*обводка пунктиром*/
+    border-top: 5px dashed blue; /*бордер так же бывает left right bottom*/
+    /*бордер можно насраивать отдельно через*/
+    /*border-color: aliceblue;*/
+    /*border-width: ;*/
+    /*и так далее*/
+}
+.block {
+    border: 1px solid;
+    width: 500px;
+    height: 100px;
+    border-radius: 8px /*8px 8px 8px*/;
+    padding: 8px;/*внутренний отступ*/
+    box-sizing: border-box;
+    margin: 16px;/*внешние поля*/
+    margin: 0 auto;
+    overflow: auto;/*добавляет скроллер*/
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.inline {
+    border: 1px solid;
+    display: inline-block;
+    width: 300px;
+    padding: 8px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10px;
+}
